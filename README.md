@@ -41,7 +41,7 @@ sudo apt install i3blocks i3lock i3status
 The font [Font Awesome](https://github.com/FortAwesome/Font-Awesome) is used to beautify the screen.
 Its file was already added to this repository.
 
-## at last
+## Cloning/Copying
 
 Beautify git and fill in the user data.
 
@@ -68,3 +68,14 @@ dconf write /org/mate/desktop/interface/gtk-theme "'Arc-Dark'"
 ```
 
 Well, including a simple configuration file instead of a list of instructions would be much nicer...
+
+## Clean up
+
+As long as there is a repository in the user's home folder every sub-folder is seen as  a part of that repository.
+Therefore as a final step the git-folder must be removed.
+
+```Bash
+rm -rf ~/.git
+rm ~/README.md
+rm ~/.gitignore
+```
